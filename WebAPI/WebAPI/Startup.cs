@@ -44,6 +44,7 @@ namespace WebAPI
                 options.Password.RequiredLength = 4;
             }
       );
+            services.AddCors();
 
         }
 
@@ -54,6 +55,13 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(builder =>
+           builder.WithOrigins("http://localhost:4200")
+           .AllowAnyHeader()
+           .AllowAnyMethod()
+
+           );
 
             app.UseAuthentication();
 
