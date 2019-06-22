@@ -6,14 +6,17 @@
 |   |  +--● registration
 |   |  |  |--registration.component.ts|.html|.css
 |   |  +--●  login
-|   |     |--login.component.ts|.html
+|   |  |   |--login.component.ts|.html
 |   |  |
 |   |  +--● home
 |   |  |   |--home.component.ts|.html
 |   |  |
 |   |  +--● shared
-|   |     |--user.service.ts
-|   |  
+|   |  |   |--user.service.ts
+|   |  |
+|   |  +--● auth
+|   |     |--auth.guard.ts
+|   |
 |   |--app.module.ts
 |   |--app-routing.module.ts (route configs.)
 |

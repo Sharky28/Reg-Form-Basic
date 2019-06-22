@@ -18,6 +18,9 @@ formModel={
     private router:Router,private toastr :ToastrService) { }
 
   ngOnInit() {
+    if(localStorage.getItem('token')!=null){
+     this.router.navigateByUrl('/home'); 
+    }
   }
 
   onSubmit(form:NgForm){
