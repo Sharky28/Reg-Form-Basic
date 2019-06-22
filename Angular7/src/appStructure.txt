@@ -5,7 +5,9 @@
 |   |  |--user.component.ts|.html|.css
 |   |  +--● registration
 |   |  |  |--registration.component.ts|.html|.css
-|   |  |
+|   |  +--●  login
+|   |     |--login.component.ts|.html
+|   |  
 |   |  +--● shared
 |   |     |--user.service.ts
 |   |
