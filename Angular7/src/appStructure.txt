@@ -7,10 +7,13 @@
 |   |  |  |--registration.component.ts|.html|.css
 |   |  +--●  login
 |   |     |--login.component.ts|.html
-|   |  
+|   |  |
+|   |  +--● home
+|   |  |   |--home.component.ts|.html
+|   |  |
 |   |  +--● shared
 |   |     |--user.service.ts
-|   |
+|   |  
 |   |--app.module.ts
 |   |--app-routing.module.ts (route configs.)
 |

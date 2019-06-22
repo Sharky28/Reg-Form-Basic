@@ -1,5 +1,5 @@
 <img src ="/assets/img/single_user.png" class ="mx-auto d-block" >
-<form #form="ngForm" class ="mb-4" autocomplete="off">
+<form #form="ngForm" class ="mb-4" autocomplete="off" (submit) = "onSubmit(form)">
   <div class="form-group">
     <label>Username</label>
     <input class="form-control" #Username ="ngModel" name ="UserName" [(ngModel)] = formModel.UserName required>

@@ -43,4 +43,10 @@ readonly BaseURI = 'http://localhost:52397/api';
     };
    return  this.http.post(this.BaseURI +'/ApplicationUser/Register',body);
   }
+
+  login(formData){
+    return  this.http.post(this.BaseURI +'/ApplicationUser/Login',formData);
+    
+
+  }
 }
