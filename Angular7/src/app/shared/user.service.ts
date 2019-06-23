@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
@@ -47,6 +47,10 @@ readonly BaseURI = 'http://localhost:52397/api';
   login(formData){
     return  this.http.post(this.BaseURI +'/ApplicationUser/Login',formData);
     
+  }
 
+  getUserProfile(){
+    var tokenHeader = new HttpHeaders({'Authorization':'Bearer '+ localStorage.getItem('token')});
+   return this.http.get(this.BaseURI+'/UserProfile',{headers : tokenHeader});
   }
 }
